@@ -1,0 +1,31 @@
+Time Block 1 (0:00 – 0:30)
+
+Task: Project Setup
+Description:
+Initialized Spring Boot project using Spring Initializr
+Added dependencies: spring-boot-starter-web, spring-boot-starter-validation, and lombok
+Created basic folder structure: controller, service, model, storage, dto
+
+Time Block 2 (0:30 – 1:00)
+Task: User Authentication
+Description:
+Created User model and AuthRequest DTO
+Implemented InMemoryStorage to store users in a Map
+Developed AuthService for registration and login
+Implemented AuthController with /register and /login endpoints
+
+Time Block 3 (1:00 – 1:30)
+Task: Task Management
+Description:
+Created Task model
+Added TaskService for adding, retrieving, and deleting tasks per user
+Integrated in-memory task handling with userId mapping
+Built TaskController with /tasks endpoints (POST, GET, DELETE)
+
+Time Block 4 (1:30 – 2:00)
+Task: Testing and Token Validation
+Description:
+Added token-based authorization logic in TaskController
+Verified task ownership with user tokens
+Tested full flow using Postman: register → login → get token → create/view/delete task
+Added basic validation and error handling for edge cases (e.g. duplicate user, invalid token)
